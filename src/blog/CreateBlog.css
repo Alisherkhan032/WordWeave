@@ -1,0 +1,75 @@
+/* CreateBlog.css */
+
+section {
+    max-width: 600px; /* Set a maximum width for the form section */
+    margin: 2rem auto; /* Center the section with some margin */
+    padding: 2rem; /* Add padding for better spacing */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for contrast */
+  }
+  
+  h3 {
+    margin: 1rem 0; /* Margin for space between labels */
+    color: #555; /* Slightly lighter color for subheadings */
+  }
+  
+  label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 1rem; /* Space between each label */
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 0.5rem; /* Padding for better touch area */
+    margin-top: 0.5rem; /* Space between label and input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Consistent font size */
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .submit-btn {
+    width: 100%; /* Full width for submit button */
+    padding: 0.7rem; /* Padding for better touch area */
+    margin-top: 1rem; /* Space above button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Consistent font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .spinner {
+    border: 2px solid white; /* White spinner border */
+    border-top: 2px solid rgba(255, 255, 255, 0.5); /* Spinner top color */
+    border-radius: 50%; /* Circular shape */
+    width: 1rem; /* Spinner size */
+    height: 1rem; /* Spinner size */
+    animation: spin 1s linear infinite; /* Spin animation */
+    display: inline-block; /* Inline display */
+    margin-right: 0.5rem; /* Space between spinner and text */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
